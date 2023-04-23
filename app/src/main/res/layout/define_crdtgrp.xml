@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDark"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/btnBkDefine"
+        style="@style/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:onClick="gotoMainAct" />
+
+    <TextView
+        android:id="@+id/vcats1"
+        style="@style/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="تعریف گروهها" />
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vcats1"
+        android:layout_marginTop="20dp"
+        android:background="@color/white_color">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCats_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="عنوان گروه جدید"
+            android:textColorHint="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bglight"
+                android:textSize="22dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="50dip"
+        android:background="@color/listbg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_color">
+
+        <Button
+            android:id="@+id/btnDefine"
+            style="@style/code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@color/bgDark"
+            android:onClick="confrimDefine"
+            android:text="تایید" />
+    </LinearLayout>
+
+
+</RelativeLayout>

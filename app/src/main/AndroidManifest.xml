@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.bejani"
+
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="ir.bejani.clsGlobFonts"
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/main_logo"
+        android:exported="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="ir.bejani.splash"
+            android:exported="true"
+
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ir.bejani.yearReportChart"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="ir.bejani.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="ir.bejani.insertCredit"
+            android:label="@string/lbl_insertAct"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="ir.bejani.insertBill"
+            android:label="@string/lbl_insertBill" />
+        <activity
+            android:name="ir.bejani.editCredit"
+            android:label="@string/lbl_editCreditAct"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="ir.bejani.editBill"
+            android:label="@string/lbl_editBill" />
+        <activity
+            android:name="ir.bejani.CreditGroups"
+            android:label="@string/lbl_defineAct" />
+        <activity
+
+            android:name="ir.bejani.showCatsCurMonth"
+            android:label="@string/lbl_showCurMonthCatsReport" />
+        <activity
+            android:name="ir.bejani.tmp.showMonthReport"
+            android:label="@string/lbl_showMonthReport"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="ir.bejani.showActRecyc"
+            android:label="@string/lbl_showAct" />
+        <activity
+            android:name="ir.bejani.searchActRecyc"
+            android:label="جستجو"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="ir.bejani.showCurMonth"
+            android:label="مخارج ماه جاری"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="ir.bejani.showCatsReport"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/lbl_showCatsReport" />
+        <activity
+            android:name="ir.bejani.showSomeDateReport"
+            android:label="@string/lbl_showSomedateReport" />
+        <activity
+            android:name="ir.bejani.showSomeDateCatsReport"
+            android:label="@string/lbl_showSomeDateCatsReport" />
+        <activity
+            android:name="ir.bejani.showDetailsRecyc"
+            android:label="@string/lbl_showDetails" />
+        <activity
+            android:name="ir.bejani.sendReporttoEmail"
+            android:label="@string/lbl_uploadReport" />
+        <activity
+            android:name="ir.bejani.helpAct"
+            android:label="@string/lbl_help" />
+        <activity
+            android:name="ir.bejani.Settings"
+            android:label="@string/lbl_Settings" />
+
+        <receiver android:name="ir.bejani.pmxrWidget"
+            android:exported="true">
+
+
+            <intent-filter>
+
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/pmxr_app_widget_provider" />
+        </receiver>
+
+        <activity
+            android:name="ir.bejani.CustomMonthRecyc"
+            android:label="مخارج ماه انتخابی"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="ir.bejani.CustomMonthCatsRecyc"
+            android:label="مخارج تفکیکی ماه انتخابی"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

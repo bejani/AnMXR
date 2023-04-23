@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/optionmnu"
+        android:icon="@drawable/ic_optmenu"
+        android:showAsAction="always"
+        android:title="@string/action_settings">
+        <menu>
+         
+            <item
+                android:id="@+id/mnuUploadXsl"
+                android:icon="@drawable/ic_upload_report"
+                android:orderInCategory="107"
+                android:showAsAction="always"
+                android:title="@string/lbl_uploadXsl"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">  تحلیل مخارج</string>
+    <string name="action_settings">منوها</string>
+    <string name="lbl_splash">  مخارج روزانه</string>
+    <string name="lbl_showAct">مشاهده لیست مخارج</string>
+    <string name="lbl_searchAct">جستجو</string>
+    <string name="lbl_yearReport">گزارش سالانه</string>
+    <string name="lbl_insertAct">ثبت هزینه جدید</string>
+    <string name="lbl_editBill">ویرایش قبوض پرداختی</string>
+    <string name="lbl_insertQist">ثبت اقساط پرداختی</string>
+    <string name="lbl_insertBill">ثبت قبوض پرداختی</string>
+    <string name="lbl_defineAct"> تعریف گروههای هزینه ای </string>
+    <string name="lbl_help"> راهنما </string>
+    <string name="lbl_Settings"> تنظیمات </string>
+    <string name="lbl_showDetails"> جزئیات گروه انتخابی </string>
+    <string name="lbl_editCreditAct"> ویرایش هزینه ها</string>
+    <string name="lbl_showCatsReport">مخارج کل به تفکیک گروهها</string>
+    <string name="lbl_showCurMonthReport">مخارج ماه جاری</string>
+    <string name="lbl_showCurMonthCatsReport">مخارج تفکیکی ماه جاری</string>
+    <string name="lbl_showMonthReport">گزارش مخارج ماهانه</string>
+    <string name="lbl_showSomedateReport">گزارش دوره ای</string>
+    <string name="lbl_showSomeDateCatsReport">  گزارش دوره ای تفکیکی</string>
+    <string name="lbl_uploadReport">خروجی اکسل یا پشتیبان به ایمیل</string>
+    <string name="lbl_uploadXsl">خروجی اکسل </string>
+    <string name="lbl_uploadReporttoExcel">خروجی گزارش در قالب اکسل</string>
+    <string name="lbl_backup">پشتیبان گیری</string>
+    <string name="lbl_restore">بازنشانی پایگاه داده</string>
+    <string name="lbl_delDB">حذف کل اطلاعات ذخیره شده</string>
+    <string name="lbl_Transfer">دریافت اطلاعات از نسخه رایگان</string>
+    <string name="lbl_Exit">خروج</string>
+    <string name="str_listMessage">برای انجام عملیات روی ردیف دلخواه کلیک کرده و نگه دارید</string>
+    <string name="str_emptyList">لیست هزینه ها ، خالی است.</string>
+    <string name="str_emptyTodayList">لیست هزینه های امروز ، خالی است برای مشاهده هزینه ها از منو اقدام کنید.</string>
+    <string name="str_selectCat">یک گروه هزینه ای برای هزینه وارد شده انتخاب نمایید</string>
+    <string name="str_emptyField">وارد کردن تمام فیلدها اجباری است</string>
+    <string name="str_emptyDate">تاریخ شروع یا پایان خالی است. لطفا درست وارد کنید</string>
+    <string name="str_emptyEntry">یکی از مقادیر وارد شده خالی است ، لطفا درست وارد کنید</string>
+    <string name="str_emptyGroups">لیست  گروهها خالی است</string>
+
+    <string name="msgMore">لطفا تا فراخوانی اطلاعات صبر کنید </string>
+    <string name="msg_billEmptyField">فیلدهای مبلغ قبض و نوع قبض نمی توانند خالی باشند </string>
+    <string name="msg_allDBDeleted">همه اطلاعات مربوط به هزینه ها و گروههای هزینه ای حذف گردید </string>
+    <string name="msg_transfer">همه اطلاعات لیست هزینه ها و گروهها با موفقیت از نسخه رایگان به نسخه جاری انتقال یافت </string>
+    <string name="msg_backupDone">عملیات پشتیبان گیری با موفقیت انجام گردید </string>
+    <string name="msg_restoreDone">عملیات بازنشانی پایگاه داده از پایگاه پشتیبان با موفقیت انجام گردید </string>
+    <string name="msg_restoreErrorPath">خطا ! فایل پشتیبان باید به نام dragonbk.db   در مسیر انتخاب شده باشد.</string>
+    <string name="msg_sendBKError">فایل پشتیبان ایجاد نشده است لذا قابل ارسال نیست</string>
+    <string name="msg_GroupDeleted">گروه مورد نظر از لیست حذف شد</string>
+    <string name="msg_selectFileError">شما باید یک پوشه را انتخاب کنید مورد انتخابی یک فایل است</string>
+    <string name="msg_notExistTFdragon">ارسال اطلاعات از نسخه رایگان به درستی صورت نگرفته است. دوباره سعی کنید</string>
+    <string name="msg_sendMailError">چون فایل مورد نظر از طریق بک برنامه ایمیل ارسال می شود و شما هم آن را ندارید لذا ارسال در همینجا متوقف خواهد شد</string>
+    <string name="msg_sendMailBody">فایل ضمیمه حاوی تمام هزینه های مورد نظر می باشد که درقالب فایل CSV بوده و با برنامه اکسل قابل بازکردن می باشد.البته در برنامه اکسل ابتدا یک فایل خالی باز کرده و سپس از منوی Data و سپس Get External Data , From Text فایل دانلود شده را باز کنید و در ویزارد باز شده ادامه مراحل را انجام دهید</string>
+    <string name="str_emptyOrInvalidEntry">. مقدار وارد شده خالی است یا حاوی کاراکتر غیر مجاز است</string>
+    <string name="str_4year_2month">سال را با چهار رقم و ماه را با دو رقم وارد کنید مثل 1393 و 10</string>
+    <string name="str_invalidDateMsg">فرمت درست وارد کردن تاریخ شروع و پایان به این صورت است : سال  4 رقم و ماه و روز هر کدام به صورت دو رقمی و به صورت کنار هم مثل 13930512 برای دوازدهم مرداد سال نودوسه</string>
+    <string name="str_h0">با سلام
+به برنامه تحلیل مخارج روزانه خوش آمدید
+برای استفاده بهتر از این برنامه به موارد زیر توجه کنید</string>
+    <string name="str_h1">اول : بهتر است عناوین گروههای هزینه ای خود را ابتدا از دکمه "گروه هزینه ها" یا از منوی مربوطه تعریف کنید مثلا گروه دارو و درمان 
+
+، گروه میوه و سبزی ، گروه لوازم خانگی و خلاصه هر گروهی که معمولا از آنها خرید می کنید توجه کنید که از ابتدا تنها گروه متفرقه 
+
+تعریف شده است</string>
+    <string name="str_h2">دوم: پس از ثبت گروههای هزینه ای هزینه ها را با انتخاب دکمه "ثبت هزینه جدید" یا از منوی مربوطه ثبت کنید </string>
+    <string name="str_h3">سوم: اصلی ترین قابلیت این برنامه توانایی گزارشگیری خوب آن است گزارشهایی مثل 
+لیست مخارج کلی ،
+لیست مخارج کلی به تفکیک گروههای هزینه ای،
+گزارش ماهانه،
+گزارش دوره ای،
+گزارش دوره ای به تفکیک گروههای هزینه ای،
+مخارج ماه جاری ،
+مخارج ماه جاری به تفکیک گروههای هزینه ای
+برای استفاده از هرکدام از این گزارشها باید ابتدا وارد "مشاهده هزینه ها" شده و سپس از منوی مربوطه در صفحه "مشاهده لیست مخارج" 
+
+هر کدام از گزارشهای دلخواه را انتخاب کنید.</string>
+    <string name="str_h4">چهارم:
+روی لیست هایی که جلوی آنها آیکون مثلث روبه پایین است  کلیک  کنید تا جعبه گفتگوی عملیات ظاهر شود تا بتوانید هزینه
+
+ها را حذف یا ویرایش نمایید.</string>
+    <string name="str_h5">پنجم : برای جستجو از صفحه اصلی منوی مربوط به جستجو را انتخاب کنید تا پس از وارد کردن قسمتی از نام عنوان هزینه شده که قبلا 
+
+ثبت شده است لیست نتایج را مشاهده کنید.</string>
+    <string name="str_h6">  ششم : برای حذف یکجای اطلاعات از منوی مربوطه در صفحه اصلی اقدام نمایید.توجه کنید که با اجرای این گزینه همه اطلاعات وارد شده در پایگاه داده پاک شده و برای بازگشت اطلاعات از بازنشانی پشتیبان می توان استفاده نمود
+</string>
+    <string name="str_h7">هفتم: برای عملیات پشتیبان گیری از پایگاه داده برنامه ، با انتخاب  منوی "پشتیبان گیری" در صفحه اصلی برنامه و سپس با انتخاب گزینه بله  می توانید مسیری را که تمایل دارید فایل پشتیبان در آن ذخیره شود انتخاب نمایید . توجه شود که نام فایل پشتیبان ثابت بوده و با عنوان dragonbk.db  در مسیر انتخابی کاربر ذخیره خواهد شد.</string>
+    <string name="str_h8">هشتم: برای بازنشانی پایگاه داده از فایل پشتیبان پایگاه باید ابتدا با انتخاب منوی "بازنشانی پایگاه داده" که در صفحه اصلی برنامه است و سپس انتخاب گزینه بله در جعبه گفتگوی بازشده مسیری را از سیستم فایل دستگاه انتخاب کنید که حاوی فایل dragonbk.db باشد این فایل همان فایل حاصل از مرحله پشتیبان گیری است که قبلا باید در جایی ذخیره شده باشد. توجه شود که می توان به صورت دستی این فایل را در جاهای مختلف کپی کرد و سپس موقع بازنشانی پایگاه داده از آن استفاده نمود. </string>
+    <string name="str_h9"> نهم: برای دریافت اطلاعات ذخیره شده در نسخه رایگان برنامه از منوی (دریافت اطلاعات از نسخه رایگان) واقع در صفحه اصلی اقدام گردد. بدیهی است که به ازای هر بار استفاده از این منو و تایید مراحل آن همه اطلاعات ذخیره شده در برنامه رایگان به این برنامه منتقل خواهد شد این گزینه صرفا برای سازگاری با نسخه رایگان که قبلا وجود داشت می باشد و اکنون  برای کاربران جدید کاربردی ندارد .</string>
+    <string name="contact">برای ارسال نظرات با آدرس bejani@gmail.com مکاتبه نمایید.</string>
+    <string name="title_activity_model">Model</string>
+    <string name="cats_empty_error">وارد کردن فیلد عنوان گروه هزینه ای الزامی است</string>
+    <string name="sel_year_month_err">ابتدا سال و ماه را انتخاب کنید</string>
+
+</resources>

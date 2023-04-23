@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#37cc3d</color>
+    <color name="nav_color">#3F51B5</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="header1_bg">#f9fcfa</color>
+    <color name="header2_bg">#FBD6BB</color>
+
+
+    <color name="plain_color">#a40308</color>
+    <color name="blak">#000000</color>
+    <color name="bgDarkg">#388E3C</color>
+
+    <color name="bglight">#ffd54f</color>
+    <color name="bgedit">#ffecb3</color>
+    <color name="bgDark">#ff8f00</color>
+
+    <color name="farvardin">#0cd648</color>
+    <color name="ordibehesht">#0e9e39</color>
+    <color name="xordad">#0f5424</color>
+
+    <color name="tir">#f49e1d</color>
+    <color name="mordad">#ed6e1f</color>
+    <color name="shahrivar">#e12611</color>
+
+    <color name="mehr">#5cc29b</color>
+    <color name="aban">#2cdcef</color>
+    <color name="azar">#1183e1</color>
+
+    <color name="dey">#0a5fba</color>
+    <color name="bahman">#3011e1</color>
+    <color name="isfand">#1b0586</color>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        style="@style/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="می توانید یکی از گزینه های زیر را انتخاب کنید" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialog_frag_edit_btn"
+            style="@style/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ویرایش" />
+
+        <Button
+            android:id="@+id/dialog_frag_del_btn"
+            style="@style/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حذف" />
+    </LinearLayout>
+
+</LinearLayout>

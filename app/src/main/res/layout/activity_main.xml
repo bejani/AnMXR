@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@color/white_color">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+
+        android:layout_marginBottom="10dip"
+        android:verticalScrollbarPosition="left">
+
+        <LinearLayout
+            android:id="@+id/overallRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="Logo"
+                android:src="@drawable/main_logo" />
+
+            <!-- insert act -->
+
+            <LinearLayout
+                android:id="@+id/rl1"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center"
+                android:layout_margin="3dip"
+                android:background="@color/bgDark"
+                android:gravity="right"
+                android:onClick="goto_insert"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnMedicalRec"
+                    style="@style/primText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@color/bgDark"
+                    android:layout_gravity="center"
+                    android:onClick="goto_insert"
+                    android:text="ثبت هزینه جدید" />
+
+                <ImageView
+                    android:id="@+id/imgbtn1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dip"
+                    android:onClick="goto_insert"
+                    android:src="@drawable/ic_add_credit" />
+            </LinearLayout>
+
+            <!-- groups -->
+
+            <LinearLayout
+                android:id="@+id/rl2"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center"
+                android:layout_margin="3dip"
+                android:background="@color/bgDark"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="goto_define"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnEduInfo"
+                    style="@style/primText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_toLeftOf="@+id/imgbtn2"
+                    android:background="@color/bgDark"
+                    android:onClick="goto_define"
+                    android:padding="5dip"
+                    android:layout_gravity="center"
+                    android:text="گروه هزینه ها" />
+
+                <ImageView
+                    android:id="@+id/imgbtn2"
+                    android:layout_width="80dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dip"
+                    android:onClick="goto_define"
+                    android:src="@drawable/ic_group_credit" />
+            </LinearLayout>
+
+            <!-- show credits -->
+
+            <LinearLayout
+                android:id="@+id/rl3"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_margin="3dip"
+                android:background="@color/bgDark"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="goto_show"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnManage"
+                    style="@style/primText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@color/bgDark"
+                    android:onClick="goto_show"
+                    android:layout_gravity="center"
+                    android:padding="5dip"
+                    android:text="مشاهده هزینه ها" />
+
+                <ImageView
+                    android:id="@+id/imgbtn3"
+                    android:layout_width="80dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dip"
+                    android:onClick="goto_show"
+                    android:src="@drawable/ic_show_stats" />
+            </LinearLayout>
+
+            <!-- settings -->
+
+            <LinearLayout
+                android:id="@+id/rl4"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_margin="3dip"
+                android:background="@color/bgDark"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="gotoSettings">
+
+
+
+                <TextView
+                    android:id="@+id/btnSetting"
+                    style="@style/primText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@color/bgDark"
+                    android:onClick="gotoSettings"
+                    android:layout_gravity="center"
+                    android:padding="5dip"
+                    android:text="تنظیمات" />
+
+                <ImageView
+                    android:id="@+id/imgbtn4"
+                    android:layout_width="80dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dip"
+                    android:onClick="gotoSettings"
+                    android:src="@drawable/ic_settings_black_24dp" />
+            </LinearLayout>
+
+            <!-- Exit -->
+
+            <LinearLayout
+                android:id="@+id/rl5"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_margin="3dip"
+                android:background="@color/bgDark"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="quit"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnRegDaily"
+                    style="@style/primText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dip"
+                    android:background="@color/bgDark"
+                    android:onClick="quit"
+                    android:padding="5dip"
+                    android:text="خروج" />
+
+                <ImageView
+                    android:id="@+id/imgbtn5"
+                    android:layout_width="80dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dip"
+                    android:onClick="quit"
+                    android:src="@drawable/ic_exit_to_app_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mhrl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bgDark">
+
+        <ImageView
+            android:id="@+id/btnBkFromCatsReport"
+            style="@style/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:onClick="gotoMainAct" />
+
+
+        <TextView
+            android:id="@+id/hvs1"
+            style="@style/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="راهنمای سیستم" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/hrl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/h0"
+                style="@style/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dip"
+                android:padding="5dp"
+                android:background="@color/bglight"
+                android:text="@string/str_h0" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/hrl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp">
+
+            <RelativeLayout
+                android:id="@+id/hrl2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hrl1">
+
+                <TextView
+                    android:id="@+id/h1"
+                    style="@style/helpStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_h1" />
+
+                <TextView
+                    android:id="@+id/h2"
+                    style="@style/helpStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h1"
+                    android:text="@string/str_h2" />
+
+                <TextView
+                    android:id="@+id/h3"
+                    style="@style/helpStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h2"
+                    android:text="@string/str_h3" />
+
+                <TextView
+                    android:id="@+id/h4"
+                    style="@style/helpStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h3"
+                    android:text="@string/str_h4" />
+
+                <TextView
+                    android:id="@+id/h5"
+                    style="@style/helpStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h4"
+                    android:text="@string/str_h5" />
+
+                <TextView
+                    android:id="@+id/h6"
+                    style="@style/helpStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h5"
+                    android:text="@string/str_h6" />
+
+                <TextView
+                    android:id="@+id/h7"
+                    style="@style/helpStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h6"
+                    android:text="@string/str_h7" />
+
+                <TextView
+                    android:id="@+id/h8"
+                    style="@style/helpStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h7"
+                    android:text="@string/str_h8" />
+
+                <TextView
+                    android:id="@+id/h9"
+                    style="@style/helpStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h8"
+                    android:text="@string/str_h9" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    style="@style/helpStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/h9"
+                    android:text="@string/contact" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/contact"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/listbg"
+                    android:dividerHeight="2px" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>

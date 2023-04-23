@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myshape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtWidgetTotal"
+        style="@style/scode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="5dip"
+        android:text="مخارج کل" />
+
+    <TextView
+        android:id="@+id/txtWidgetTotalHolder"
+        style="@style/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtWidgetTotal"
+        android:paddingLeft="5dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtWidgetTolalYear"
+        style="@style/scode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtWidgetTotalHolder"
+        android:paddingRight="5dip"
+        android:text="مخارج سال جاری" />
+
+    <TextView
+        android:id="@+id/txtWidgetTolalYearHolder"
+        style="@style/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtWidgetTolalYear"
+        android:paddingLeft="5dip"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/txtWidgetTolalMonth"
+        style="@style/scode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtWidgetTolalYearHolder"
+        android:paddingRight="5dip"
+        android:text="مخارج ماه جاری" />
+
+    <TextView
+        android:id="@+id/txtWidgetTolalMonthHolder"
+        style="@style/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtWidgetTolalMonth"
+        android:paddingLeft="5dip"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imgViewWidgetInsertAct"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtWidgetTolalMonthHolder"
+        android:paddingLeft="5dip"
+        android:paddingBottom="3dip"
+        android:src="@drawable/ic_defineact" />
+
+    <ImageView
+        android:id="@+id/imgViewWidgetshowAct"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/txtWidgetTolalMonthHolder"
+        android:layout_toLeftOf="@+id/imgViewWidgetInsertAct"
+        android:paddingRight="5dip"
+        android:paddingBottom="3dip"
+        android:src="@drawable/ic_showact" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bgDark">
+
+        <ImageView
+            android:id="@+id/btnBkFromCatsMonthReport"
+            style="@style/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:onClick="gotoCustomMonthReport"
+            android:text=""
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/vcm1"
+            style="@style/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="مخارج تفکیکی ماه انتخابی" />
+
+        <TextView
+            android:id="@+id/year"
+            style="@style/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/vcm1"
+            android:text="سال و ماه" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginBottom="45dip"
+        android:background="@color/listbg" />
+
+    <TextView
+        android:id="@+id/catsMonthTotal"
+        style="@style/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Total" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_menu_std"
+        android:title="منوها"
+        app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/gm1">
+                <item
+                    android:id="@+id/mnuGotoAbout"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:orderInCategory="101"
+                    android:title="درباره"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuGotoHelp"
+                    android:icon="@drawable/ic_help_outline_black_24dp"
+                    android:orderInCategory="101"
+                    android:title="@string/lbl_help"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuGotoSettings"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:orderInCategory="102"
+                    android:title="@string/lbl_Settings"
+                    app:showAsAction="never" />
+            </group>
+            <group android:id="@+id/gm2">
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <item
+                    android:id="@+id/mnuGotoDefine"
+                    android:icon="@drawable/ic_group_credit"
+                    android:orderInCategory="102"
+                    android:title="@string/lbl_defineAct"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuGotoInsert"
+                    android:icon="@drawable/ic_add_credit"
+                    android:orderInCategory="103"
+                    android:title="@string/lbl_insertAct"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuGotoSearch"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:orderInCategory="104"
+                    android:title="@string/lbl_searchAct"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/mnuGotoShow"
+                    android:icon="@drawable/ic_show_stats"
+                    android:orderInCategory="105"
+                    android:title="@string/lbl_showAct"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuBackup"
+                    android:icon="@drawable/ic_dbbk"
+                    android:orderInCategory="106"
+                    android:title="@string/lbl_backup"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuRestore"
+                    android:icon="@drawable/ic_restore_bk"
+                    android:orderInCategory="107"
+                    android:title="@string/lbl_restore"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuDelDB"
+                    android:icon="@drawable/ic_delete_forever_black_24dp"
+                    android:orderInCategory="108"
+                    android:title="@string/lbl_delDB"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuTransfer"
+                    android:icon="@drawable/ic_transform_black_24dp"
+                    android:orderInCategory="109"
+                    android:title="@string/lbl_Transfer"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/btnExit"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:orderInCategory="110"
+                    android:title="@string/lbl_Exit"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+
+    </item>
+
+
+</menu>

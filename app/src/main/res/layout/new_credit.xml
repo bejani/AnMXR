@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/appBar"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtcrdt_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  مبلغ هزینه"
+                android:textColorHint="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bglight"
+                    android:textSize="22dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtcrdtname_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  عنوان هزینه"
+                android:textColorHint="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCreditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bglight"
+                    android:textSize="22dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="31dp"
+                android:paddingRight="5dp"
+                android:textSize="18sp"
+                android:text=" گروه هزینه ای:"
+                android:textColor="@color/blak" />
+
+
+            <TextView
+                android:id="@+id/txtCatSel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/light_btn_bg"
+                android:hint="انتخاب کنید"
+                android:onClick="opendia"
+                android:padding="10dp"
+                android:textColor="@color/framecolor"
+                android:textColorHint="@color/bgcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/v311"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="31dp"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+                android:text=" تاریخ هزینه:"
+                android:textColor="@color/blak" />
+            <TextView
+                android:id="@+id/txtInsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/light_btn_bg"
+
+                android:padding="10dp"
+                android:hint="انتخاب کنید"
+                android:textColor="@color/framecolor"
+                android:textColorHint="@color/bgcolor"
+                android:textSize="18sp" />
+
+            <ir.mirrajabi.persiancalendar.PersianCalendarView
+                android:id="@+id/persian_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:pcv_colorBackground="#0579b3"
+                app:pcv_colorDayName="#bab6b6"
+                app:pcv_colorHoliday="#ffd506"
+                app:pcv_colorHolidaySelected="#f1f2f3"
+                app:pcv_colorNormalDay="#f3f4f5"
+                app:pcv_colorNormalDaySelected="#d9d9d9"
+                app:pcv_eventUnderlineColor="#02f0f0"
+                app:pcv_fontSize="20sp"
+                app:pcv_headersFontSize="14sp"
+                tools:ignore="MissingClass" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnConfirmInsert"
+        style="@style/code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInsDate"
+        android:layout_margin="10dip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bgDark"
+        android:onClick="confirmInsert"
+        android:text="تایید و ثبت" />
+
+</LinearLayout>

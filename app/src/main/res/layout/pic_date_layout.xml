@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootPicDateLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linlay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" 
+        android:layout_alignParentTop="true">
+
+        <NumberPicker
+            android:id="@+id/npYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/npMonth"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/npYear"
+            android:layout_height="wrap_content" >
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/npDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_toRightOf="@+id/npMonth">
+        </NumberPicker>
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/listbg"
+            android:layout_centerInParent="true"
+            android:dividerHeight="2dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDateFrom"
+        style="@style/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="تایید"
+        android:visibility="gone" />
+
+</RelativeLayout>

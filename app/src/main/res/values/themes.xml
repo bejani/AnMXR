@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyAppActionBarTheme" parent="android:Theme.Holo.Light">
+        <!-- <item name="android:popupMenuStyle">@style/MyApp.PopupMenu</item>-->
+        <item name="android:actionBarStyle">@style/MyApp.ActionBar</item>
+    </style>
+
+    <!-- The beef: background color for Action Bar overflow menu 
+        <style name="MyApp.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel</item>
+    </style>
+    -->
+
+    <!-- Bonus: if you want to style whole Action Bar, not just the menu -->
+    <style name="MyApp.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid">
+        <!-- Blue background color & black bottom border -->
+        <item name="android:background">@drawable/actionbar_bg</item>
+    </style>   
+
+</resources>

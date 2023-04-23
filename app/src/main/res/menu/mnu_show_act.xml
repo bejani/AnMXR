@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_menu_std"
+        android:title="منوها"
+        app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/gm1">
+                <item
+                    android:id="@+id/mnuCurMonthReport"
+                    android:icon="@drawable/ic_cur_month_report"
+                    android:orderInCategory="102"
+                    android:title="@string/lbl_showCurMonthReport"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuCatsReport"
+                    android:icon="@drawable/ic_mnu_cats"
+                    android:orderInCategory="103"
+                    android:title="@string/lbl_showCatsReport"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuMonthReport"
+                    android:icon="@drawable/ic_month_report"
+                    android:orderInCategory="104"
+                    android:title="@string/lbl_showMonthReport"
+                    app:showAsAction="never" />
+            </group>
+            <group android:id="@+id/gm2">
+                <item
+                    android:id="@+id/mnuReportSomeDate"
+                    android:icon="@drawable/ic_some_date_report"
+                    android:orderInCategory="105"
+                    android:title="@string/lbl_showSomedateReport"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuAnualReport"
+                    android:icon="@drawable/ic_anual"
+                    android:orderInCategory="106"
+                    android:title="@string/lbl_yearReport"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuShowAllCredits"
+                    android:icon="@drawable/ic_show_all_black_24dp"
+                    android:orderInCategory="107"
+                    android:title="مشاهده تمام هزینه ها"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/mnuUploadReport"
+                    android:icon="@drawable/ic_upload_report"
+                    android:orderInCategory="108"
+                    android:title="خروجی اکسل و ارسال به ایمیل"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

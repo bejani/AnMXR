@@ -1,0 +1,40 @@
+R_DEF: Internal format may change without notice
+local
+attr? pcv_colorBackground
+attr? pcv_colorDayName
+attr? pcv_colorHoliday
+attr? pcv_colorHolidaySelected
+attr? pcv_colorNormalDay
+attr? pcv_colorNormalDaySelected
+attr? pcv_eventUnderlineColor
+attr? pcv_fontSize
+attr? pcv_headersFontSize
+attr? pcv_headersTypefacePath
+attr? pcv_selectedDayBackground
+attr? pcv_todayBackground
+attr? pcv_typefacePath
+color currentDay
+color selectDay
+dimen day_item_event_size
+dimen day_item_select_size
+dimen day_item_size
+dimen grid_calendar_height
+dimen grid_calendar_padding
+dimen grid_calendar_padding_bottom
+drawable circle_current_day
+drawable circle_select
+id calendar_pager
+id event
+id fragment_holder
+id month_recycler
+id num
+id select_day
+id today
+layout fragment_calendar
+layout fragment_month
+layout item_day
+layout view_calendar
+raw events
+string app_name
+style PersianCalendarTheme
+styleable PersianCalendarView pcv_typefacePath pcv_headersTypefacePath pcv_colorBackground pcv_colorHoliday pcv_colorHolidaySelected pcv_colorNormalDaySelected pcv_colorNormalDay pcv_colorDayName pcv_eventUnderlineColor pcv_todayBackground pcv_selectedDayBackground pcv_fontSize pcv_headersFontSize

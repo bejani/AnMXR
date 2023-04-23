@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMonthReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header1_bg" >
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"/>
+    <TextView
+        android:id="@+id/vm1"
+        style="@style/txt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/appBar"
+        android:text=" مخارج ماه جاری" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/vm1"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/total"
+        style="@style/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="total" />
+
+
+</RelativeLayout>
